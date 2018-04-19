@@ -100,9 +100,11 @@ var x =5;
 function form_matricula(){
 	var rows = document.getElementById("tabela").getElementsByTagName("tr").length;
 	rows -= 1;
-	for(var j=1;j<=rows;j++){
-		if(document.getElementById("aprovado")[j].checked==true){
-			alert("SIm");
-		}
-    }
+	if(rows<20){
+		alert("Menos de 20 alunos");
+    }else if(rows>60){
+		alert("Mais de 60 alunos");
+	}else{
+		alert("Quantidade de alunos aprovados: ",rows,"\nQuantidade de alunos reprovados: ",rows);
+	}
 }
