@@ -82,7 +82,7 @@ function cadastrar_aluno(){
 
 	if(obrigatorio1 == "" || obrigatorio2 == "" || obrigatorio3 == "" || obrigatorio4 == "" || obrigatorio5 == "" || obrigatorio6 == "" || obrigatorio7 == "" || vSenha == "" || confsenha == ""){
 		alert("Preencha todos os campos!");
-	}else if(valida_cpf(obrigatorio5) == false){
+	}else if(valida_cpf() == false){
         alert("CPF inválido!");
 	}else if(!regex.exec(validacao.value)){
 		alert("A senha deve conter no mínimo 1 número e 1 letra!");
@@ -100,9 +100,11 @@ var x =5;
 function form_matricula(){
 	var rows = document.getElementById("tabela").getElementsByTagName("tr").length;
 	rows -= 1;
-	for(var j=1;j<=rows;j++){
-		if(document.getElementById("aprovado")[j].checked==true){
-			alert("SIm");
-		}
-    }
+	if(rows<20){
+		alert("Menos de 20 alunos");
+    }else if(rows>60){
+		alert("Mais de 60 alunos");
+	}else{
+		alert("Quantidade de alunos aprovados: ",rows,"\nQuantidade de alunos reprovados: ",rows);
+	}
 }
