@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="estilo.css" />
+	<link rel="apple-touch-icon" sizes="57x57" href="imgs/icone-url.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="imgs/icone-url.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="imgs/icone-url.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="imgs/icone-url.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="imgs/icone-url.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="imgs/icone-url.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="imgs/icone-url.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="imgs/icone-url.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="imgs/icone-url.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="imgs/icone-url.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="imgs/icone-url.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="imgs/icone-url.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="imgs/icone-url.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="imgs/icone-url.png">
+	<meta name="theme-color" content="#ffffff"> 
+</head>
+<body>
+    <div class="cabecalho">
+        <img src="imgs/logo-menu.png" height="70px" class="logo-menu">
+        
+        <ul>
+            <li><a href="index.html">INDEX</a></li>
+            <li><a href="cursos.html">CURSOS</a></li>
+            <li class="menu-login"><a href="page_index.html">LOGIN</a></li>
+			<li class="menu-login"><a href="novoaluno.html">ALUNO</a></li>
+			<li class="menu-login"><a href="matricula.html">MATRÍCULA</a></li>
+        </ul>
+    </div>
+	
+	<!--------------------------- ESTE É O CONTEUDO DO SITE-------------------->
+    <main class="conteudo">
+        <br>
+        <br>
+        <br>
+        <br>
+        <fieldset class="field_tamires">
+        <p><h2> Formulário para a solicitação de um novo curso</h2></p>
+        <p><h3> Somente pessoas autorizadas podem solicitar um novo curso.</h3></p>
+        <form action="cadastro" method="POST" name="CadastroCurso">
+            <label><b>Informe o nome do curso:</b></label></br>
+            <input type="text" name="nameCurso" placeholder="Informe o nome do curso" required size="30" maxlength="30"></br>
+        </br>
+            <label><b>Faça uma breve descrição do curso:</b></label></br>
+            <textarea name="descricao"></textarea></br>
+            </br><label><b>Nível ao qual o curso está vinculado:</b></label>
+            </br><select name="nivel">
+                <option value ="SL"> -- Selecione --</option>
+                <option value="TC"> Tecnólogo</option>
+                <option value="BH"> Bacharel</option></br>
+           
+            
+            </select>
+        </br>
+        <input type="submit" value="Enviar">   
+        </form>
+        </fieldset>
+        <br>
+        <br>
+        <br>
+        <br>
+    </main>
+	
+    <footer class="rodape">
+            Copyright © UNITECH. Todos os direitos reservados.
+    </footer>
+</body>
+</html>

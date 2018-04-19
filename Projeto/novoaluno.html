@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>NOVO ALUNO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="estilo.css" />
+	<script src="javascript.js" defer async charset="utf-8"></script>
+
+	<link rel="apple-touch-icon" sizes="57x57" href="imgs/icone-url.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="imgs/icone-url.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="imgs/icone-url.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="imgs/icone-url.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="imgs/icone-url.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="imgs/icone-url.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="imgs/icone-url.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="imgs/icone-url.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="imgs/icone-url.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="imgs/icone-url.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="imgs/icone-url.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="imgs/icone-url.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="imgs/icone-url.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="imgs/icone-url.png">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <div class="cabecalho">
+        <img src="imgs/logo-menu.png" height="70px" class="logo-menu">
+        
+        <ul>
+            <li><a href="index.html">INDEX</a></li>
+            <li><a href="cursos.html">CURSOS</a></li>
+            <li class="menu-login"><a href="page_index.html">LOGIN</a></li>
+			<li class="menu-login"><a href="novoaluno.html">ALUNO</a></li>
+			<li class="menu-login"><a href="matricula.html">MATRÍCULA</a></li>
+        </ul>
+    </div>
+	
+    <!--------------------------- ESTE É O CONTEUDO DO SITE-------------------------------->
+	 <main class="conteudo">
+        <br>
+        <br>
+        <br>
+        <br>
+        <center><strong><font size="5">NOVO ALUNO</font></strong></center>
+		<br/>
+		<br/>
+		<br/>
+	<form id="formulario" action="javascript:cadastrar_aluno();">
+        <label>* Login:</label><br/>
+        <input type="text"  id = "login">
+		<br/>
+		<br/>
+		<label>* Nome:</label><br/>
+        <input type="text"  id = "nome">
+		<br/>
+		<br/>
+		<label>* E-mail:</label><br/>
+        <input type="text"  id = "email">
+		<br/>
+		<br/>
+		<label>Celular:</label><br/>
+        <input type="text"  id = "celular">
+		<br/>
+		<br/>
+		<label>* Nascimento:</label><br/>
+        <input type="date"  id = "nascimento">
+		<br/>
+		<br/>
+		<label>* CPF:</label><br/>
+        <input type="text"  id = "cpf">
+		<br/>
+		<br/>
+		<label>* Senha:</label><br/>
+        <input type="text"  id = "senha">
+		<br/>
+		<br/>
+		<label>* Confirmação de Senha:</label><br/>
+        <input type="text"  id = "confsenha">
+		<br/>
+		<br/>
+		
+        <input type="submit" value="Enviar">
+		
+    </form>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+	</main>
+	
+	
+	<footer class="rodape">
+            Copyright © UNITECH. Todos os direitos reservados.
+    </footer>
+</body>
+</html>
