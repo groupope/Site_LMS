@@ -93,18 +93,6 @@ function cadastrar_aluno(){
 		alert("Idade insuficiente!");
 	}else{
 		alert("Cadastrado com sucesso!");
-	}
-}
-
-var x =5;
-function form_matricula(){
-	var rows = document.getElementById("tabela").getElementsByTagName("tr").length;
-	rows -= 1;
-	if(rows<20){
-		alert("Menos de 20 alunos");
-    }else if(rows>60){
-		alert("Mais de 60 alunos");
-	}else{
-		alert("Quantidade de alunos aprovados: ",rows,"\nQuantidade de alunos reprovados: ",rows);
+		window.location.reload();
 	}
 }
